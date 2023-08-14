@@ -23,3 +23,4 @@
 |git log --pretty=oneline | vê todos os commit 
 |git log --pretty=format:"%h %s" --graph | vê o historico em forma de grafico de toda a linha do tempo 
 |git log -p -2 | mostra as alterações do projeto e compara o que foi mudado 
+|git pull | usado para buscar e baixar conteúdo de repositórios remotos e fazer a atualização imediata ao repositório local para que os conteúdos sejam iguais
