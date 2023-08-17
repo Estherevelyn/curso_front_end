@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        table, th, td {
+          border: 1px solid rgb(10, 1, 1);
+          border-collapse: collapse;
+
+        }
+        th, td {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Tabelas </h1>
+
+<!--Títulos em cima-->
+    <table>
+     <caption>Agenda de Contatos</caption>
+     <thead>
+        <tr>
+            <th>Nome</th>
+            <th colspan="2">Telefone/Endereço</th>
+        </tr>
+     </thead>
+
+     <tbody>
+        <tr>
+            <td>Esther</td>
+            <td>3333-1000</td>
+            <td>Brasília</td>
+        </tr>
+        <tr>
+             <td>Fulano</td>
+             <td>5555-1000</td>
+             <td>Rio de Janeiro</td>  
+        </tr>
+        <tr>
+            <td>Esther</td>
+            <td>3333-1000</td>
+            <td rowspan="2">Brasília</td>
+        </tr>
+        <tr>
+             <td >Fulano</td>
+             <td>5555-1000</td>
+              
+        </tr>
+     </tbody>
+
+     <td>Criado </td>
+    </table>
+
+      <br>
+
+    <!--Titulos ao lado-->
+    <table>
+        <tr>
+            <th>titulos 1</th>
+            <td>dados </td>
+            <td>dados</td>
+        </tr>
+        <tr>
+            <th>titulos 2</th>
+            <td>dados</td>
+            <td>dados</td>
+        </tr>
+        <tr>
+            <th>titulos 3</th>
+            <td>dados</td>
+            <td>dados</td>
+        </tr>
+    </table>
+
+
+
+</body>
+</html>
