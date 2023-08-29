@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 2</title>
+</head>
+<body>
+    <!-- <form action="cadastro.js" method="get">
+        <div>
+            <label for="iestado">Estado</label>
+            <select name="estado" id="iestado">
+
+           <optgroup label="Nordeste" >
+            <option value="BA">Salvador</option>
+            <option value="CE">CE</option>
+           </optgroup>
+            <optgroup label="Centro-oeste">
+                <option value="DF">DF</option>
+            <option value="GO">GO</option>
+            </optgroup>
+        </div>
+    </select> -->
+    <!-- </form> -->
+
+    <form action="cadastro.js" method="get">
+    <div>
+    </div>
+       <!-- <div>
+        <label for="ijogo">Jogo</label>
+        <input type="text" name="jogo" id="ijogo" list="ijogolist">
+        <datalist name="jogolist" id="ijogolist">
+        <option value="GOD">GOD of War</option>
+         <option value="GOH">God Hand</option>
+        </datalist>
+       </div>
+        <br>
+       <label for="imensagens">Cometario</label>
+       <textarea name="mensagens" id="imensagens" cols="30" rows="10"></textarea>
+         -->
+    
+         
+    <div>
+        <label for="irange">Selecione</label>
+        <input type="range" name="range" id="irange" max="10" min="1" 
+        oninput="saida.innerHTML= Number(range.value)"
+        >
+        <output id="saida">5</output>
+    </div>
+</form>
+</body>
+</html>

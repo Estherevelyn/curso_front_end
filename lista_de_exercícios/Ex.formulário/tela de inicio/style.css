@@ -4,10 +4,11 @@
 }
 
 body {
-    background-image: url(../../Imagens/background.netflix.jpg);
+    background-image: url(../../../Imagens/background.netflix.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    color: aliceblue;
 
 }
 
