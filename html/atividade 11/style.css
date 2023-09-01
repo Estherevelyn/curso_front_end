@@ -34,3 +34,20 @@ form{
     margin: 2em;
     display: block;
 }
+
+@media (max-width: 712px){
+ 
+    .container {
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 500px)
+{
+
+     img {
+        display: none;
+     }
+}
+
