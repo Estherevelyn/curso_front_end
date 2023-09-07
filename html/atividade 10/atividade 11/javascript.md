@@ -1,0 +1,7 @@
+SE --- IF
+SENAO --- ELSE 
+PARA --- FOR
+ENQUANTO --- WHILE
+FAÇA --- DO
+ESCREVA --- CONSOLE / WRITE
+

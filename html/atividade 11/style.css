@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+}
+
+.container{
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 50px;
+
+}
+
+img {
+    width: 600px;
+}
+
+form{
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+.campos{
+    margin: 2em;
+    display: block;
+}
+
+@media (max-width: 712px){
+ 
+    .container {
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 500px)
+{
+
+     img {
+        display: none;
+     }
+}
+
