@@ -4,44 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos</title>
-
-<!-- <style>
-.quadrado {
-    height: 100px;
-    width: 100px;
-    background-color: cadetblue;
-    color: azure;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
     
-<h1>Eventos</h1>
-<br>
-<div id="quadrado" class="quadrado" >
-</div> -->
-
-
-<form action="">
-    <div>
+<form action="" method="get" id="base">
+      <h1 id="titulo">Calculadora</h1>
+      <br>
+    <div class="contas1">
         <label for="n1"></label>
         <input type="number" name="n1" id="n1">
     </div>
      <br>
-    <div>
+    <div class="conta2">
         <label for="n2"></label>
         <input type="number" name="n2" id="n2">
     </div>
-     <input type="button" value="somar" id="soma">
-     <input type="button" value="subtracao" id="subtrair">
-     <input type="button" value="multiplicar" id="multiplicar">
-     <input type="button" value="dividir" id="divisao">
+    <br>
+    <div id="bordabotoes">
+        <input type="button" value="+" id="soma" class="botoes">
+        <input type="button" value="-" id="subtrair" class="botoes">
+        <input type="button" value="*" id="multiplicar" class="botoes">
+        <input type="button" value="/" id="divisao"class="botoes">
+    </div>
+      <br>
+     <div id="resposta" class="resultado"></div>
 
-     <div id="resposta"></div>
 </form>
-<script>
-
-</script>
 
 <script src="script.js"></script>
 </body>
