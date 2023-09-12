@@ -5,9 +5,28 @@
 }
 
 header {
-    background-color: black;
+    background-color:  #497043;
+    position: fixed;
+    width: 100%;
 }
 
+footer {
+    background-color: #497043;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    padding-top: 5em;
+    padding-bottom: 2em;
+    margin-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 li{
     list-style: none;
 }
@@ -27,6 +46,7 @@ a{
 .logo{
     font-size: 2rem;
     font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .nav-menu{
@@ -35,15 +55,15 @@ a{
     gap: 60px;
 }
 
-nav-link{
+.nav-link{
     transition: 0.5s ease;
 }
 
 .nav-link:hover{
-    color:brown;
+    color: black;
 }
 
-.humburguer{
+.hamburguer{
     display: none;
     cursor: pointer;
 }
@@ -58,14 +78,23 @@ nav-link{
     transition: all 0.3 ease-in-out;
 }
 
-@media (max-width:768px) {
-    .humburguer{
+#titulo {
+    text-align: center;
+    color: #133D20;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width:800px){
+    .hamburguer{
         display: block;
     }
-    .humburguer.active .bar:nth-child(2){
+    .hamburguer.active .bar:nth-child(2){
         opacity: 0;
     }
-    .humburguer.active bar:nth-child(1){
+    .hamburguer.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+    }
+    .hamburguer.active .bar:nth-child(3){
     transform: translateY(-8px) rotate(-45deg);
     }
     .nav-menu{
@@ -74,17 +103,22 @@ nav-link{
         top: 70px;
         gap: 0;
         border-radius: 0 0 20px 20px;
-        background-color: blueviolet;
+        background-color: #ACBDAA;
         text-align: center;
         flex-direction: column;
         width: 100%;
         transition: 0.3s;
     }
+
     .nav-item{
         margin: 16px 0;
     }
     .nav-menu.active{
         left: 0;
     }
+}
+
+#subtitulos {
+    color: darkolivegreen;
 }
 
