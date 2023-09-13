@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+      width: 80%;
+      margin: auto;
+}
+
+#elementos {
+     margin: auto;
+     width: fit-content;
+
+}
+
+.primeira , .segunda{
+    border: 1px solid black;
+    padding: 1.5em;
+    display: inline-block;
+    margin: 1em 0.5em;
+}
+
+button{
+    padding: 0.3em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    border: 1px solid black;
+    margin: 0.5em 0;
+    padding: 0.3em;
+    transition: 0.5s;
+}
+
+li:hover{
+    color: aliceblue;
+    background-color: darkslateblue;
+}
+
+.primeira .selecionado {
+    box-shadow: 0 0 3px green, inset 0 0 3px green;
+}
+
+.segunda .selecionado {
+    box-shadow: 0 0 3px red, inset 0 0 3px red;
+}
+
