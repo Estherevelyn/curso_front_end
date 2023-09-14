@@ -6,16 +6,26 @@
 
 h1{
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: antiquewhite;
+    margin-top: 20px;
+}
+
+hr{
+    height: 3px;
 }
 
 body{
     width: 100vw;
     height: 100vh;
+    background-color: #F39F5A;
+    overflow: hidden;
 }
 
 .container {
       width: 80%;
       margin: auto;
+      margin-top: 10%;
 }
 
 #elementos {
@@ -25,37 +35,79 @@ body{
 }
 
 .primeira , .segunda{
-    border: 1px solid black;
+     border: 5px solid #FFBA86;
+     border-radius: 20px;
     padding: 1.5em;
     display: inline-block;
-    margin: 1em 0.5em;
+    margin: 1em 0.5em; 
+
+    
 }
 
 button{
-    padding: 0.3em;
+  padding: 10px 20px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+  line-height: 1.25;
+  background: #FC6E51;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  position: relative;
+  transition: background-color .6s ease;
+  overflow: hidden;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    top: var(--mouse-y);
+    left: var(--mouse-x);
+    transform-style: flat;
+    transform: translate3d(-50%,-50%,0);
+    background: rgba(white,.1);
+    border-radius: 100%;
+    transition: width .3s ease, height .3s ease;
+  }
+  &:focus,
+  &:hover {
+      background: darken(#FC6E51,7%);
+  }
+  &:active {
+    &:after {
+      width: 300px;
+      height: 300px;
+    }
+  }
 }
+
 
 ul {
     list-style: none;
 }
 
 li {
-    border: 1px solid black;
+    border: 3px solid #765827;
     margin: 0.5em 0;
     padding: 0.3em;
     transition: 0.5s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 li:hover{
     color: aliceblue;
-    background-color: darkslateblue;
+    background-color: #C8AE7D;
 }
 
 .primeira .selecionado {
-    box-shadow: 0 0 3px green, inset 0 0 3px green;
+    box-shadow: 0 0 5px #004225, inset 0 0 3px #004225;
 }
 
 .segunda .selecionado {
-    box-shadow: 0 0 3px red, inset 0 0 3px red;
+    box-shadow: 0 0 5px #9A3B3B, inset 0 0 3px #9A3B3B;
 }
 
