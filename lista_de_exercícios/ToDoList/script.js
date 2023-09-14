@@ -2,9 +2,10 @@
 const textoBox = document.getElementById("texto-box");
 // variavel dentro da ul onde irá aparecer as tarefas
 const listaContainer = document.getElementById("lista-container");
+const botao = document.querySelector('button')
 
 // função criada para adicionar(botão) a tarefa da forma antiga pq não está funcionando
-// o Luciano vai me odiar por isso
+botao.addEventListener('click', addTarefa)
 function addTarefa(){
 // se não for adicionado nenhum texto criar um valor nulo
   if(textoBox.value === ''){
@@ -34,13 +35,5 @@ adicionar.target.parentElement.remove();
  }
 })
 
-
-//Perguntas ao Professor// 
-
-//Qual a diferenca entre interHTML e interText 
-
-//Se precisava limitar a quantidade de tarefas 
-
-//Por que não precisa do li no html eu criei mais depois apaguei 
 
 
