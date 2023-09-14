@@ -4,7 +4,7 @@ const textoBox = document.getElementById("texto-box");
 const listaContainer = document.getElementById("lista-container");
 const botao = document.querySelector('button')
 
-// função criada para adicionar(botão) a tarefa da forma antiga pq não está funcionando
+// criar o evento click 
 botao.addEventListener('click', addTarefa)
 function addTarefa(){
 // se não for adicionado nenhum texto criar um valor nulo
