@@ -28,12 +28,21 @@ function addTarefa(){
  listaContainer.addEventListener("click", function(adicionar){
 if(adicionar.target.tagName === "LI"){
  adicionar.target.classList.toggle("checked");
+ salvarDados();
 }
 //se quiser pode adicionar ou excluir a tarefa 
 else if(adicionar.target.tagName === "EXCLUIR"){
 adicionar.target.parentElement.remove();
+ salvarDados();
  }
-})
+}, false)
 
+ function salvarDados(){
+localStorage.setItem('dados', listaContainer.innerHTML);
+}
 
+ function mostrarTarefa(){
+listaContainer.innerHTML = localStorage.getItem('dados');
+}
+ mostrarTarefa();
 
