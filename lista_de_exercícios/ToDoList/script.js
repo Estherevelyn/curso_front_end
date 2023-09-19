@@ -36,13 +36,14 @@ adicionar.target.parentElement.remove();
  salvarDados();
  }
 }, false)
-
+//Salvar os dados 
  function salvarDados(){
 localStorage.setItem('dados', listaContainer.innerHTML);
 }
-
+//retornar o valor 
  function mostrarTarefa(){
 listaContainer.innerHTML = localStorage.getItem('dados');
 }
+//Salvar o valor na tela 
  mostrarTarefa();
 
