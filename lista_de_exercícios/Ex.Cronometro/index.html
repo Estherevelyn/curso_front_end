@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Cronômetro</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     
   </head>
   <body>
-
+     <header>
+      <h1>Cronômetro</h1>
+     </header>
+    <div id="container">
+     <div class="todo">  
     <div id="tempo">
       0.0s
-    </div>
-
+     </div>   
+    <div id="botoes">
     <button id="play" onclick="iniciarCronometro();">Iniciar</button>
     <button id="pause" onclick="pausarCronometro();" disabled="true">Pausar</button>
     <button id="reset" onclick="zerarCronometro();" disabled="true">Zerar</button>
-
+    </div>
     <div id="parciais">
     </div>
+  </div>
+  </div>
     <script src="script.js"></script>
   </body>
 </html>
