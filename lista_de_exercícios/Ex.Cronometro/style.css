@@ -101,3 +101,8 @@ h1{
 #tempo{
     margin: 20px;
 }
+
+div #play:hover{
+    transform: scale(0.5s);
+    transition: 0.5s;
+}
