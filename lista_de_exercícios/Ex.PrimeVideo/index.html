@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem vindo ao prime video</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            color: white;
+        }
+        body{
+            height: 100vh;
+            width: auto;
+        }
+        nav{
+            background-color: #181818;
+        }
+        a {
+            color: white !important;
+        }
+
+        .div-bar{
+            max-width: 500px;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important ;
+        }
+        #dropdown{
+            background-color: #181818;
+            color: white !important;
+        }
+        #logo{
+            width: 6em;
+        }
+
+        section{
+            height: 660px;
+        }
+        #principal{
+            position: relative;
+            background-image: url(./img/background.jpg\));
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-size:contain;
+        }
+        #secundaria{
+            position: absolute;
+            background-image: linear-gradient( 90deg, black 50%, transparent);
+            width: 100%;
+            top: 3.5em;
+            left: 0;
+        }
+
+        .textos{
+            width: 40%;
+            height: 100%;
+            margin-left: 4em;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+        }
+
+        button{
+            background-color: #0F79AF;
+            padding: 1em;
+            border: none;
+            min-width: 300px;
+        }
+        article > div{
+            color: black;
+        }
+        #produtos{
+            display: flex;
+            justify-content: center;
+        }
+        #texto-produtos{
+            width: 40%;
+            padding: 3em;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+        }
+        #imagens{
+            width: 60% ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.3em;
+            flex-wrap: wrap;
+            padding: 0.5em 4em;
+        }
+        img{
+            max-width: 15em;
+        }
+        img:hover{
+            box-shadow: 0 0 3px 3px #282828;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid div-bar">
+              <a class="navbar-brand" href="#"><img src="./img/Logo.png" alt="prime" id="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Loja</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link disabled" aria-disabled="true">Tv ao vivo</a>
+                  </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                        Categorias
+                      </a>
+                      <ul class="dropdown-menu" id="dropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section id="principal">
+    </section>
+    <section id="secundaria">
+        <div class="textos">
+            <h1>Filmes, séries e muito mais</h1>
+            <br>
+            <p>Assista a Amazon Originais premiados e tenha frete grátis em diversos produtos. Com o plano anual você paga o equivalente a R$ 9,92/mês (R$119/ano). Aproveite!</p>
+            <br>
+            <div style="max-width: 300px;">
+                <a href="http://127.0.0.1:5502/lista_de_exerc%C3%ADcios/Ex.PrimeVideo/telaDeLogin.html"><button>Já é Prime? Faça login</button></a>
+                <br>
+                <p style="text-align: center;">ou</p>
+                <a href="#"><button>Experimente 30 dias grátis*</button></a>
+            </div>
+            <br>
+            <small>*Após 30 dias, o Amazon Prime é renovado automaticamente por R$14,90/mês ou R$119/ano. Cancele a qualquer momento. VERIFIQUE A CLASSIFICAÇÃO INDICATIVA.</small>
+        </div>
+    </section>
+
+    <section >
+        <article id="produtos">
+            <div id="texto-produtos">
+                <h2>Adicione canais que você ama na sua assinatura Prime</h2>
+                <br>
+                <p style="color: black">Com o Prime Video Channels, os clientes Prime podem assinar os canais que amam sem compromissos de longo prazo, ou seja, podendo cancelar a qualquer momento. Experimente canais selecionados por 7 dias grátis e assista tudo no mesmo lugar, onde estiver.</p>
+            </div>
+            <div id="imagens">
+                <img class="DVPAWebWidgetsCustomComponents_Image__image" src="https://m.media-amazon.com/images/G/01/digital/video/Magellan_MLP/AMZN_MLP_image_logo_BR_ParamountPlus_426x294.jpg" alt="Paramount Plus">
+                <img class="DVPAWebWidgetsCustomComponents_Image__image" src="https://m.media-amazon.com/images/G/01/digital/video/merch/subs/benefit-id/g-l/hbomaxbr/heroes/AMZN_MLP_image_logo_Template_426x294.jpg" alt="HBO Max">
+                <img class="DVPAWebWidgetsCustomComponents_Image__image" src="https://m.media-amazon.com/images/G/01/digital/video/Magellan_MLP/AMZN_MLP_image_logo_Premiere_426x294.jpg" alt="Premiere">
+                <img class="DVPAWebWidgetsCustomComponents_Image__image" src="https://m.media-amazon.com/images/G/01/digital/video/merch/subs/benefit-id/s-z/telecinechannelbr/heroes/AMZN_MLP_image_logo_Template_426x294.jpg" alt="Telecine">
+                <img class="DVPAWebWidgetsCustomComponents_Image__image" src="https://m.media-amazon.com/images/G/01/digital/video/Magellan_MLP/AMZN_MLP_image_logo_BR_DiscoveryPlus_426x294.jpg" alt="Discovery+">
+                <img class="DVPAWebWidgetsCustomComponents_Image__image" src="https://m.media-amazon.com/images/G/01/digital/video/Magellan_MLP/AMZN_MLP_image_logo_BR_Looke_426x294.jpg" alt="Looke">
+                <img class="DVPAWebWidgetsCustomComponents_Image__image" src="https://m.media-amazon.com/images/G/01/digital/video/merch/subs/benefit-id/s-z/starzplaybr/heroes/AMZN_MLP__image_logo_BR_Template_426x294.jpg" alt="Lionsgate+">
+                <img class="DVPAWebWidgetsCustomComponents_Image__image" src="https://m.media-amazon.com/images/G/01/digital/video/merch/subs/benefit-id/a-f/adrenalinapurabr/heroes/AMZN_MLP_image_logo_ES_Template_426x294.jpg" alt="Adrenalina Pura">
+                <img class="DVPAWebWidgetsCustomComponents_Image__image" src="https://m.media-amazon.com/images/G/01/digital/video/Magellan_MLP/AMZN_MLP_image_logo_BR_MGM_426x294.jpg" alt="MGM">
+                <img class="DVPAWebWidgetsCustomComponents_Image__image" src="https://m.media-amazon.com/images/G/01/digital/video/merch/subs/benefit-id/m-r/imovisionbr/heroes/AMZN_MLP__image_logo_BR_Template_426x294.jpg" alt="Imovision">
+                <img class="DVPAWebWidgetsCustomComponents_Image__image" src="https://m.media-amazon.com/images/G/01/digital/video/merch/subs/benefit-id/m-r/mubibr/heroes/AMZN_MLP__image_logo_BR_Template_426x294.jpg" alt="Mubi">
+                <img class="DVPAWebWidgetsCustomComponents_Image__image" src="https://m.media-amazon.com/images/G/01/digital/video/merch/subs/benefit-id/s-z/stingrayca/heroes/AMZN_MLP_image_logo_EN_Template_426x294.jpg" alt="Stingray">
+            </div>
+        </article>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
